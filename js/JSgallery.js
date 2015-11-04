@@ -1,10 +1,10 @@
 var gallery = document.getElementById("gallery");
 var imgDisplay = document.getElementById("image_show");
 
-if (location.search) {
-    nameText = location.search.slice(1);
-    tagline.innerHTML = "develop something beautiful, " + nameText;
-}
+// if (location.search) {
+//     nameText = location.search.slice(1);
+//     tagline.innerHTML = "develop something beautiful, " + nameText;
+// }
 
 function genImg(num) {
 

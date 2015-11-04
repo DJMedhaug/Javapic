@@ -30,8 +30,7 @@ $(document).click(function(event) {
         else {
             $('#image_show').attr('class', 'display_none');
         };
-        
-});
+
 
 
 
