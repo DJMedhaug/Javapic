@@ -5,22 +5,22 @@ $(function() {
 });
 
 $('#submit').click(function(event) {
+        event.preventDefault();
 
-if ($('[name="name"]').val().length < 1) {
-    window.alert("Type in your name!");
-};
+    if ($('[name="name"]').val().length < 1) {
+        window.alert("Type in your name!");
+    };
 
-if ($('[name="username"]').val().length < 1) {
-    window.alert("Type in your username!");
-};
+    if ($('[name="username"]').val().length < 1) {
+        window.alert("Type in your username!");
+    };
 
 
-if (emailCheck.test($('[name="email"]').val()) === false) {
-     window.alert('Type in a valid email!!!');
-     event.preventDefault();
-};
+    if (emailCheck.test($('[name="email"]').val()) === false) {
+        window.alert('Type in a valid email!!!');
+        event.preventDefault();
+    };
 
 var $name = $('[name="name"]').val();
-    event.preventDefault();
     window.location.href = "gallery.html?" + $name;
 });
