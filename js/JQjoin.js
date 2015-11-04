@@ -21,5 +21,6 @@ if (emailCheck.test($('[name="email"]').val()) === false) {
 };
 
 var $name = $('[name="name"]').val();
-window.location.href = "gallery.html?" + $name;
+    event.preventDefault();
+    window.location.href = "gallery.html?" + $name;
 });
