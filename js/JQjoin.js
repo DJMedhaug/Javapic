@@ -21,5 +21,5 @@ if (emailCheck.test($('[name="email"]').val()) === false) {
 };
 
 var $name = $('[name="name"]').val();
-$('#signup').attr("action","gallery.html?" + $name);
+window.location.href = "gallery.html?" + $name;
 });
